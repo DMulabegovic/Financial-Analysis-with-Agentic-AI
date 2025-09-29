@@ -1,0 +1,9 @@
+.env
+*.env
+
+.ipynb_checkpoints
+
+mem/
+
+.DS_Store
+Thumbs.db

@@ -1,0 +1,10 @@
+numpy
+pandas
+matplotlib
+requests
+yfinance
+alpha_vantage
+fredapi
+python-dotenv
+pandas-datareader
+openai

@@ -17,7 +17,7 @@ def get_prices(ticker, period="1y", interval="1d"):
     print(f"[TOOL] prices[{ticker}] attempting yfinance...")
     try:
         df = yf.download(ticker, period=period, interval=interval, progress=False)
-        # ✅ Handle both Adj Close and Close
+        # Handle both Adj Close and Close
         if "Adj Close" in df.columns:
             df = df[["Adj Close"]].rename(columns={"Adj Close": "adj_close"})
         elif "Close" in df.columns:
@@ -48,7 +48,7 @@ def get_prices(ticker, period="1y", interval="1d"):
         return df
     except Exception as e:
         print(f"Stooq failed: {e}")
-        print("💡 Hint: run 'pip install pandas-datareader setuptools'")
+        print(" Hint: run 'pip install pandas-datareader setuptools'")
 
     raise RuntimeError("All price sources failed!")
 
@@ -69,7 +69,7 @@ def get_news(ticker, n=8):
     print(f"[TOOL] news[{ticker}] attempting NewsAPI...")
     key = os.getenv("NEWSAPI_KEY", "")
     if not key or len(key) < 10:
-        print("❌ Missing or invalid NEWSAPI_KEY. Set it in .env.")
+        print("Missing or invalid NEWSAPI_KEY. Set it in .env.")
         return []
 
     url = "https://newsapi.org/v2/everything"

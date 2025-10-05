@@ -1,6 +1,4 @@
-# ==========================================================
-# Simple NLP and Routing Utilities
-# ==========================================================
+
 POSITIVE_WORDS = {"growth", "beat", "gain", "strong", "up", "positive", "profit"}
 NEGATIVE_WORDS = {"loss", "miss", "down", "decline", "negative", "weak", "drop"}
 

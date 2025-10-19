@@ -2,6 +2,7 @@ Financial Analysis with Agentic AI
 
 This project implements an agentic AI system that performs end to end financial analysis using live data sources. It plans, executes, summarizes, evaluates, improves, and replans, creating a self adapting analysis loop.
 
+  
 Setup Instructions
 
 Requirements:
@@ -14,6 +15,7 @@ Install required libraries:
 pip install numpy pandas matplotlib requests yfinance pandas_datareader fredapi python-dotenv
 
 
+  
 
 API Keys (.env Setup):
 
@@ -32,6 +34,7 @@ LLM_MODEL=gpt-4
 
 
 
+  
 Running the Notebook
 
 1. Open the Jupyter Notebook:
@@ -44,6 +47,7 @@ Financial Analysis with Agentic AI.ipynb
 * Produce all visuals, summaries, and evaluation results.
 
 
+  
 
 Outputs
 
@@ -54,6 +58,7 @@ Outputs
 * Feedback Loop: Plan 2 adapts from Plan 1 results
 
 
+  
 
 Summary
 
@@ -64,6 +69,7 @@ Plan → Act with tools → Summarize → Critique → Improve → Remember → 
 It integrates multiple data sources and AI-driven reasoning to autonomously improve its analysis with each pass.
 
 
+  
 
 Notes
 
